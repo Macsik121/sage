@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ============================= Header ============================ */
+
+.header {
+  background: #352d2f;
+  color: #FFF;
+  border-bottom: 1px solid #494244;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header nav ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+  opacity: .5;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.header nav ul li.active a, .header nav ul li a:hover {
+  opacity: 1;
+  border-bottom: 4px solid #FFF;
+}
+
+.header nav ul li + li {
+  margin-left: 35px;
+}
+
+.header .control {
+  display: flex;
+  align-items: center;
+}
+
+.header .lang {
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Titillium Web";
+  opacity: .5;
+  padding-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .lang::after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-top-color: #FFF;
+  right: 0;
+  top: 50%;
+}
+
+.header .form {
+  border-left: 1px solid #494244;
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.header .form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  padding: 10px 10px 3px 10px;
+}
+
+.header .form input:focus {
+  border-bottom: 2px solid #5C5355;
+}
+
+.header .form .search {
+  cursor: pointer;
+  margin-left: 13px;
+  filter: invert(1);
+}
+
+.header .form .search:hover {
+  opacity: .7;
+}
